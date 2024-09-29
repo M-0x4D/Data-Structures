@@ -1,0 +1,15 @@
+{
+    "name": "mohamed/alg",
+    "autoload": {
+        "psr-4": {
+            "Mohamed\\Alg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "m-0x4d",
+            "email": "adl774855@gmail.com"
+        }
+    ],
+    "require": {}
+}
