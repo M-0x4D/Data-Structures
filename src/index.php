@@ -4,9 +4,30 @@ namespace Mohamed\Alg;
 use Mohamed\Alg\Graph\Dijkstra;
 use Mohamed\Alg\Graph\Graph;
 use Mohamed\Alg\Graph\WeightedGraph;
+use Mohamed\Alg\LinkedList\LinkedList;
 use Mohamed\Alg\Tree\Tree;
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
+//***************************** Linked List *********************************************
+
+$list = new LinkedList();
+
+// Append data to the list
+$list->append(10);
+$list->append(20);
+$list->append(30);
+
+// Display the list
+$list->display(); // Output: 10 -> 20 -> 30 -> null
+
+// Delete a node
+$list->delete(20);
+
+// Display the list again
+$list->display();
+//***************************** Linked List *********************************************
+
 
 //***************************** Tree *********************************************
 //$tree = new Tree();
@@ -27,8 +48,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
 //$graph->addEdge('B', 'D');
 //$graph->addEdge('C', 'D');
 //
-//$graph->performDFS('A');
-//
+//$graph->performBFS('A');
+
 //echo "Graph representation:\n";
 //$graph->display();
 
@@ -36,16 +57,16 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 
 //***************************** Weighted Graph *********************************************
-$graph = new WeightedGraph();
-$graph->addEdge('A', 'B', 1);
-$graph->addEdge('A', 'C', 0);
-$graph->addEdge('B', 'C', 8);
-$graph->addEdge('B', 'D', 6);
-$graph->addEdge('C', 'D', 1);
-$res = $graph->dijkstra('B');
-foreach ($res as $i => $node) {
-    echo $node . ' ';
-}
+//$graph = new WeightedGraph();
+//$graph->addEdge('A', 'B', 1);
+//$graph->addEdge('A', 'C', 0);
+//$graph->addEdge('B', 'C', 8);
+//$graph->addEdge('B', 'D', 6);
+//$graph->addEdge('C', 'D', 1);
+//$res = $graph->dijkstra('B');
+//foreach ($res as $i => $node) {
+//    echo $node . ' ';
+//}
 
 // Shortest Path Algorithm
 //$dijkstra = new Dijkstra();
